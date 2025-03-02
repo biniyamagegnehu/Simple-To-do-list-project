@@ -1,4 +1,4 @@
-const toDoList = [{}];
+const toDoList = [];
 
 displayTasks();
 
@@ -6,14 +6,11 @@ function displayTasks() {
     let listHTML = '';
 
     for (let index = 0; index < toDoList.length; index++) {
-        const taskObject = toDoList[index];
-        const task = taskObject.task;
-        const taskDate = taskObject.taskDate;
-
+        const task = toDoList[index];
+        
         listHTML += `
             <p>              
                 ${task}
-                ${taskDate}
                 <button onclick="
                     toDoList.splice(${index},1);
                     displayTasks();
@@ -32,14 +29,10 @@ function displayTasks() {
 
 function addTask() {
     const inputTask = document.querySelector('.task');
-    const inputDate = document.querySelector('.task-date');
     let task = inputTask.value;
-    let taskDate = inputDate.value;
 
-    toDoList.push({
-        task:task,
-        taskDate:taskDate
-    });
+
+    toDoList.push(task);
     console.log(toDoList);
     inputTask.value = '';
 

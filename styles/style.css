@@ -14,7 +14,6 @@ body {
     color: black;
     padding: 30px;
     border-radius: 25px;
-    margin-top: 20%;
     padding: 50px;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -51,25 +50,20 @@ button{
     padding: 8px;
     display: flex;
     flex-direction: column;
-    margin: 0;
 }
 
-.display-tasks p {
+/* .display-tasks p {
     padding: 8px;
     margin: 15px;
     margin: 7px;
     display: flex;
-    flex-direction: row;
-}
+    
+} */
 
 .display-tasks button {
     padding: 8px;
     margin: 5px;
     background-color: red;
-    margin-left: 70%;
+    margin-left: 20%;
     margin-top: 5px;
-}
-
-.display-tasks   {
-    display: ;
 }
