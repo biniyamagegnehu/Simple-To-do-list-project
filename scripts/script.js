@@ -31,10 +31,13 @@ function addTask() {
     const inputTask = document.querySelector('.task');
     let task = inputTask.value;
 
-
+    if(task==''){
+        alert("You didn't enter any task!  Please enter some task");
+    } else {
     toDoList.push(task);
     console.log(toDoList);
     inputTask.value = '';
+    }
 
     displayTasks();
 }

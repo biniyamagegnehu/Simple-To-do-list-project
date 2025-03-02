@@ -6,7 +6,7 @@ body {
     background-color: rgb(21, 2, 2);
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .container {
@@ -14,9 +14,9 @@ body {
     color: black;
     padding: 30px;
     border-radius: 25px;
-    padding: 50px;
     padding-top: 20px;
     padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 h1 {
@@ -28,6 +28,7 @@ h1 {
 input {
     padding: 20px;
     margin: 8px;
+    margin-bottom: 0;
     margin-right: 0px;
     border-radius: 15px;
     background-color:lightgray;
@@ -52,18 +53,16 @@ button{
     flex-direction: column;
 }
 
-/* .display-tasks p {
-    padding: 8px;
-    margin: 15px;
-    margin: 7px;
-    display: flex;
-    
-} */
 
 .display-tasks button {
     padding: 8px;
     margin: 5px;
     background-color: red;
-    margin-left: 20%;
-    margin-top: 5px;
+    margin-left: 60%;
+    margin-top: 0;
+}
+
+.display-tasks p{
+    padding: 8px;
+    margin-top: 0;
 }
